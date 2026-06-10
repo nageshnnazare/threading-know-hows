@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '04_atomics/03_memory_orders'
-relocations:     []
-...

@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '02_mutex/03_unique_lock'
-relocations:     []
-...

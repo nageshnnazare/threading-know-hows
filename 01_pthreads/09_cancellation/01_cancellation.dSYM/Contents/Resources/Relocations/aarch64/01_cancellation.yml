@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '09_cancellation/01_cancellation'
-relocations:     []
-...

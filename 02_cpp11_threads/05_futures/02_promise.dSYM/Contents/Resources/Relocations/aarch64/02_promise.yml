@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '05_futures/02_promise'
-relocations:     []
-...

@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '06_call_once/01_call_once'
-relocations:     []
-...

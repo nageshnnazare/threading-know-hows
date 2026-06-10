@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '08_thread_specific/01_tls_pthread'
-relocations:     []
-...

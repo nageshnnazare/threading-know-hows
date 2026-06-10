@@ -1,5 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '07_thread_local/01_thread_local'
-relocations:     []
-...
