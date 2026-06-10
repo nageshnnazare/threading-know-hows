@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '03_condition_variables/02_producer_consumer'
+relocations:     []
+...

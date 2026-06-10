@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '08_jthread_cpp20/03_semaphore'
+relocations:     []
+...

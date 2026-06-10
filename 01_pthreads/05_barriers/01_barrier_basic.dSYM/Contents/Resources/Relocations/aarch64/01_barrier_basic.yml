@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '05_barriers/01_barrier_basic'
+relocations:     []
+...

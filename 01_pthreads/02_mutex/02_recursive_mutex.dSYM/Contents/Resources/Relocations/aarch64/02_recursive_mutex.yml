@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '02_mutex/02_recursive_mutex'
+relocations:     []
+...

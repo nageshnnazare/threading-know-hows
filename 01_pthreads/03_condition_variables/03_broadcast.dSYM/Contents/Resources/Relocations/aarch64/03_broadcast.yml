@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '03_condition_variables/03_broadcast'
+relocations:     []
+...

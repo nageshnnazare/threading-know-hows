@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '04_rwlock/01_rwlock_basic'
+relocations:     []
+...

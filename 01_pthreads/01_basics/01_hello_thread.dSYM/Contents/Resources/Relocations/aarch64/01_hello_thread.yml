@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '01_basics/01_hello_thread'
+relocations:     []
+...
