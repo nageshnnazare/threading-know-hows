@@ -1,0 +1,14 @@
+# Compiled example binaries (keep sources + Makefiles)
+examples/**/*.o
+examples/**/*.out
+examples/**/*.dSYM/
+
+# Locally fetched build script (CI downloads it fresh)
+htmler.sh
+
+# Python
+__pycache__/
+*.pyc
+
+# QuickLook render scratch
+_shots/

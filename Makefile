@@ -1,18 +1,12 @@
-# Top-level Makefile that delegates to each section.
+# Top-level Makefile: all runnable code lives under examples/.
 
-DIRS := 01_pthreads 02_cpp11_threads 03_patterns 04_pitfalls 05_memory_model 06_openmp
+.PHONY: all clean run
 
-.PHONY: all clean run $(DIRS)
+all:
+	$(MAKE) -C examples
 
-all:  $(DIRS:%=build-%)
-clean: $(DIRS:%=clean-%)
-run:  $(DIRS:%=run-%)
+clean:
+	$(MAKE) -C examples clean
 
-build-%:
-	$(MAKE) -C $*
-
-clean-%:
-	$(MAKE) -C $* clean
-
-run-%:
-	$(MAKE) -C $* run
+run:
+	$(MAKE) -C examples run
