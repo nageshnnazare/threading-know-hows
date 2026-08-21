@@ -2564,7 +2564,7 @@ body[data-scheme="highcontrast"][data-theme="light"] .tab-content pre code.pygco
 <div class="page-credit-wrap">
   <a class="page-credit-badge" href="https://github.com/nageshnnazare/threading-know-hows" target="_blank" rel="noopener noreferrer" aria-label="Open repository">nageshnnazare/threading-know-hows</a>
   <footer class="page-credit" id="pageCredit" aria-label="Generated with love from this repo">
-    <span>Built with <span class="heart" aria-label="love">❤</span> using <a href="https://github.com/nageshnnazare/htmler.sh" target="_blank" rel="noopener noreferrer">nageshnnazare/htmler.sh</a></span>
+    <span>Stitched with <span class="heart" aria-label="love">❤</span> using <a href="https://github.com/nageshnnazare/htmler.sh" target="_blank" rel="noopener noreferrer">nageshnnazare/htmler.sh</a></span>
   </footer>
 </div>
 
@@ -6605,7 +6605,7 @@ depends on contention and core count; measure, don't assume.
 
 Next: [1.6 — Thread-local storage & cancellation](06-tls-and-cancellation.md)
 ` },
-  { name: `11. Pthreads / Tls And Cancellation`, path: `01-pthreads/06-tls-and-cancellation.md`, dir: `01-pthreads`, words: 1237, mins: 6, body: `<h1 id="16--thread-local-storage--cancellation">1.6 — Thread-Local Storage &amp; Cancellation<\/h1>
+  { name: `11. Pthreads / Tls And Cancellation`, path: `01-pthreads/06-tls-and-cancellation.md`, dir: `01-pthreads`, words: 1239, mins: 6, body: `<h1 id="16--thread-local-storage--cancellation">1.6 — Thread-Local Storage &amp; Cancellation<\/h1>
 <p>Not all state should be shared. <strong>Thread-local storage (TLS)<\/strong> gives each
 thread its own copy of a variable — per-thread buffers, errno-like scratch
 space, request context. <strong>Cancellation<\/strong> lets one thread forcibly stop another —
@@ -6619,9 +6619,9 @@ function using a static buffer would be a race:<\/p>
 <pre><code class="pygcode">   process address space
    ┌──────────────────────────────────────────────┐
    │  global key k  ──▶  per-thread slot table    │
-   │                        │         │         │  │
-   │                     thread A  thread B  thread C
-   │                     buf_A     buf_B     buf_C
+   │                     │         │         │    │
+   │                 thread A  thread B  thread C |
+   │                    buf_A     buf_B     buf_C |
    └──────────────────────────────────────────────┘
 <\/code><\/pre>
 <p>No mutex needed for thread-private data — different memory locations, no shared
@@ -6836,9 +6836,9 @@ TLS moves \`buf\` into each thread's private storage:
    process address space
    ┌──────────────────────────────────────────────┐
    │  global key k  ──▶  per-thread slot table    │
-   │                        │         │         │  │
-   │                     thread A  thread B  thread C
-   │                     buf_A     buf_B     buf_C
+   │                     │         │         │    │
+   │                 thread A  thread B  thread C |
+   │                    buf_A     buf_B     buf_C |
    └──────────────────────────────────────────────┘
 \`\`\`
 
