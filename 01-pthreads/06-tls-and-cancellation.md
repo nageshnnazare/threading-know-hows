@@ -22,9 +22,9 @@ TLS moves `buf` into each thread's private storage:
    process address space
    ┌──────────────────────────────────────────────┐
    │  global key k  ──▶  per-thread slot table    │
-   │                        │         │         │  │
-   │                     thread A  thread B  thread C
-   │                     buf_A     buf_B     buf_C
+   │                     │         │         │    │
+   │                 thread A  thread B  thread C |
+   │                    buf_A     buf_B     buf_C |
    └──────────────────────────────────────────────┘
 ```
 
