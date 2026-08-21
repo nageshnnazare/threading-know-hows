@@ -24,13 +24,13 @@ Compare two threads in one process against two separate processes:
 
 ```
    ┌───────────────────────────┬───────────────────────────────────────┐
-   │ SHARED between threads      │ PRIVATE to each thread                │
+   │ SHARED between threads    │ PRIVATE to each thread                │
    ├───────────────────────────┼───────────────────────────────────────┤
-   │ heap (malloc/new)           │ stack (locals, call frames)           │
-   │ global / static variables   │ CPU registers, program counter        │
-   │ code (text segment)         │ thread-local storage (thread_local)   │
-   │ open file descriptors       │ errno (it's thread-local!)            │
-   │ the process's PID            │ its own kernel scheduling entity      │
+   │ heap (malloc/new)         │ stack (locals, call frames)           │
+   │ global / static variables │ CPU registers, program counter        │
+   │ code (text segment)       │ thread-local storage (thread_local)   │
+   │ open file descriptors     │ errno (it's thread-local!)            │
+   │ the process's PID         │ its own kernel scheduling entity      │
    └───────────────────────────┴───────────────────────────────────────┘
 ```
 

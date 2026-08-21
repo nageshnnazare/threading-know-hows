@@ -20,12 +20,12 @@ kernel **task struct** (historically called a "lightweight process"):
 ```
    your process
    ┌─────────────────────────────────────────────────────────┐
-   │  address space (shared)                                  │
-   │    code · heap · globals · mapped files                  │
-   │                                                          │
-   │  thread 0 (main)  ──▶  task struct  ──▶  run queue     │
-   │  thread 1         ──▶  task struct  ──▶  run queue     │
-   │  thread 2         ──▶  task struct  ──▶  run queue     │
+   │  address space (shared)                                 │
+   │    code · heap · globals · mapped files                 │
+   │                                                         │
+   │  thread 0 (main)  ──▶  task struct  ──▶  run queue      │
+   │  thread 1         ──▶  task struct  ──▶  run queue      │
+   │  thread 2         ──▶  task struct  ──▶  run queue      │
    └─────────────────────────────────────────────────────────┘
         same PID, same mm_struct, different kernel stacks
 ```
